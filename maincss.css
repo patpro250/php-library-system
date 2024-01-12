@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* barner in index  */
+.barner{
+ background-image: url("./images/mm1.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ object-fit: cover;
+ height: 100vh;
+}
+
+/* barner navigation bar */
+.nav{
+
+    height: 60px;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.nav i{
+    display: none;
+    color: lightgray;
+}
+
+
+/* logo in barner  */
+
+.logo{
+    font-size: 20px;
+    font-weight: bolder;
+    color: lightgray;
+
+}
+
+.navlink ul{
+  list-style: none; 
+  display: flex;
+  padding: 20px;
+    
+}
+
+.navlink ul li{
+    padding: 16px;
+    font-size: 21px;
+   
+}
+
+.navlink ul li a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.navlink ul li a:hover{
+    color: dodgerblue;
+}
+.links-admin i{
+    color: #c0cdd7;
+    float: right;
+    padding: 10px;
+    font-size: 18px;
+    display: none;
+}
+.nav-admin i{
+    padding-right: 10px;
+    font-size: 19px;
+    display: none;
+}
+.links-admin i:hover{
+    color: dodgerblue;
+}
+/* .navlink ul li::after{
+    content: '';
+    display: block;
+    height: 1;
+
+    color: lightgray;
+
+} */
+
+/* .barner text */
+
+.barnertext{
+    width: 400px;
+    padding: 10px;
+    margin-left: 20px;
+    color: lightgray;
+    margin-top: 100px;
+    font-family: sans-serif;
+
+}
+
+.barnertext h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.barnertext h1 .span1{
+    color: dodgerblue;
+}
+
+.barnertext p{
+    line-height: 30px;
+    color:gray;
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+/* css adimin panel */
+
+.nav-admin{
+    height: 60px;
+    display: flex;
+    box-shadow: 5px 6px 15px #c0cdd7;
+    width: 100%;
+    padding:px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-admin .logo-admin{
+    font-size: 20px;
+    margin-left: 50px;
+    color: #081b29;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links-admin ul{
+    display: flex;
+    padding-right: 40px;
+    list-style: none;
+}
+
+.links-admin ul li{
+    padding: 10px;
+}
+.links-admin ul li a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #081b29;
+    font-size: 20px;
+
+}
+
+.links-admin ul li a:hover{
+    color: dodgerblue;
+}
+
+
+.triplecard{
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    padding-left: 50px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 350px;
+    height: 400px;
+    box-shadow: 5px 6px 15px #c0cdd7;
+    border-radius: 5px;
+}
+.card:nth-child(1){
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+.btn{
+    display: flex;
+    background:dodgerblue;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    transition: .5s;
+}
+.btn input{
+    font-size: 18px;
+    font-family: 'poppins',sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+.btn:hover{
+    box-shadow: 4px 2.5px 7px dodgerblue;  
+}
+.card:nth-child(1) a{
+    display: inline-flex;
+    background:dodgerblue;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 150px;
+    transition: .5s;
+}
+.card:nth-child(1) a:hover{
+    box-shadow: 4px 2.5px 7px dodgerblue;
+}
+.card:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.card:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.innerCard{
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    background: linear-gradient(dodgerblue,dodgerblue);
+}
+.innerCard h1,h3{
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    padding: 10px 20px;
+}
+
+
+/* -=============================start add book her =================== */
+
+
+main{
+    height: auto;
+}
+
+.addbook{
+    background-color:transparent;
+    border: 1px solid rgb(41, 31, 9);
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: .3s ease;
+
+} 
+.addbook:hover{
+    background-color:#202c41;
+}
+
+.addbook i{
+  
+    color: #cfcfcf;
+    font-size: 40px;
+    padding: 10px;
+}
+.addbook a{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #cfcfcf;
+
+}
+
+/* form in book add start here */
+
+form{
+   box-sizing: border-box;
+   overflow: hidden;
+   padding-bottom: 16px;
+   margin: auto;
+   margin-top: 5%;
+   margin-bottom: 40px;
+   text-align: center;
+   width: 70%;
+   background: #081b29;
+   box-shadow: 4px 0 10px #202c41;
+    
+}
+
+::placeholder{
+    color: #fff;
+}
+.headerform h1{
+    color: #cfcfcf;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input{
+    background-color: transparent;
+}
+
+/* .input input[type=text]{
+    padding: 5px;
+    width: 80%;
+    border: 1px solid  dodgerblue;
+    margin: 10px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+} */
+
+
+.text{
+    padding: 5px;
+    width: 80%;
+    margin: 10px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.input input[type=submit]{
+
+   margin-left: 47px;
+   margin-top: 20px;
+   padding: 8px 20px;
+   font-family: sans-serif;
+   font-size: 20px;
+   color: #cfcfcf;
+   float: left;
+   border: 1px solid dodgerblue;
+   background: transparent;
+   transition: .3s ease;
+   border-radius: 5px;
+
+}
+.input input[type=submit]:hover{
+    background-color:#202c41;
+    color: dodgerblue;
+    border: none;
+   
+    box-shadow: 5px 0px 10px rgba(54, 53, 53, 0.4);
+}
+
+
+/* textinput here */
+
+.textinput{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color:transparent;
+    column-gap: 20px;
+    box-sizing: border-box;
+}
+
+.textinput .text{
+    width: 300px;
+    background-color: #202c41;
+    padding: 0;
+}
+
+.textinput .text input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: transparent;
+    color: #cfcfcf;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: none;
+    transition: .3s ease;
+    border-radius: 3px;
+    padding: 8px;
+}
+.textinput .text input:focus{
+    border: 1px solid  dodgerblue;
+}
+
+
+/* end=================================================== */
+
+
+
+/* start all book============================== */
+
+
+*{
+    margin: 0px;
+    padding: 0px ;
+    box-sizing: border-box;
+    
+}
+
+.table{
+    padding: 20px;
+    background: #fff;
+    width: 100%;
+    
+}
+
+table{  
+    margin-top: 20px;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 1px;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 13px #a7a7a7;
+    /* border-radius: 7px; */
+
+}
+
+
+table thead tr th{
+    background: #081b29;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px; 
+    color: #fff;
+}
+tbody tr td{
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: #081b29;
+    font-weight:bold;
+
+
+}
+tbody tr:nth-child(odd){
+    background: dodgerblue;
+   
+}
+.tpage ul{
+    list-style: none;
+    display: flex;
+    column-gap: 20px;
+    margin-top: 40px;
+    color: #081b29;
+    padding: 10px;
+
+}
+.tpage ul li{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    color: #081b29;
+    border: 1px solid #081b29;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tpage ul li a{
+    
+    background-color: transparent;
+    text-decoration: none;
+    color: #081b29;
+    font-family: sans-serif;
+    font-weight: bold;
+
+
+}
+
+.tpage ul li:hover{
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+}
+.tpage ul li a:hover{
+    color: #fff;
+}

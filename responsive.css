@@ -1,0 +1,156 @@
+
+
+/* responsive nav links */
+@media screen and (max-width: 714px){
+    .nav i{
+        display:block;
+    }
+    .barner .nav .navlink{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: #081b29;
+        height: 100%;
+        z-index: 1;
+        transition: .5s;
+
+        display: none;
+    }
+
+    .navlink ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        margin-top: 20px;
+    }
+
+    .barner .nav .navlink i{
+        font-size: 20px;
+        float: right;
+      padding: 10px;
+    }
+    .barner .nav .navlink i:hover{
+        color: dodgerblue;
+    }
+}
+
+/* Card Responsive  */
+@media screen and (max-width: 816px){
+    .triplecard{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* end================ */
+@media screen and (max-width: 700px){
+    .links-admin{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 60px;
+        height: 90%;
+        width: 300px;
+        background: #081b29;
+        display: none;
+    }
+    .links-admin i{
+        display: block;
+    }
+    .nav-admin i{
+        display: block;
+    }
+    .links-admin ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+    }
+    .links-admin ul li a{
+        color: #fff;
+    }
+}
+
+/* end======================================================== */
+
+
+/* start add book responsive========================================= */
+
+
+
+@media (max-width:1021px) {
+    .textinput .text{
+        width: 100%;
+    }  
+
+    .textinput{
+        flex-direction: column;
+        width: 300px;
+        padding-left: 40px;
+    }
+
+    form{
+        width: 400px;
+        padding-bottom: 10px;
+
+    }
+    
+}
+
+
+/* end======================================= */
+
+
+/* all books responsive */
+
+
+@media (max-width:969px) {
+    main{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    
+    }
+    
+    @media (max-width:1021px) {
+        .table{
+            overflow-x: scroll;
+        } 
+       
+    
+    .table{
+        width: auto;
+    }
+    
+    }
+    /* sider bar hiiden */
+    
+    
+    @media (max-width:748px){
+        .tpage ul li{
+            border: 1px solid #cfcfcf;
+            padding: 5px;
+           
+    
+        }
+    
+        .tpage ul li a{
+        
+    
+            height: 0px;
+        
+        
+        }
+    
+        .tpage ul{
+            padding: 0px;
+            column-gap: 19px;
+        }
+    
+     
+    }
